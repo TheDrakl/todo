@@ -1,0 +1,36 @@
+{% load tailwind_tags %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Website</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+        {% tailwind_css %}
+<body>
+    <div class="">
+        <h1 class="text-center text-2xl">Hello</h1>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <div class="">
+                <label for="id_title" class="">Title</label>
+                <input type="text" name="title" id="id_title" class="" placeholder="Task title">
+            </div>
+            <div class="">
+                <label for="id_description" class="">Description</label>
+                <input type="text" name="description" id="id_description" class="" placeholder="Task description">
+            </div>
+            <div class="">
+                <input type="checkbox" name="is_completed" id="id_is_completed" class="" placeholder="Task title">
+                <label for="id_is_completed" class="">Completed</label>
+            </div>
+
+            <div>
+                <button type="submit" class="">Save task</button>
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>
