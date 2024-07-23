@@ -19,7 +19,11 @@ INTERNAL_IPS = [
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'todo-1-6une.onrender.com',
+    'localhost',
+    '127.0.0.1',
+]
 
 
 # Application definition
